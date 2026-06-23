@@ -1,33 +1,67 @@
-let pedidos=[];
+let itens=[];
 let total=0;
 
 
-function addCarrinho(nome,valor){
+function adicionar(nome,valor){
 
-pedidos.push(nome);
+itens.push(nome);
 
 total += valor;
 
-document.getElementById("carrinho").innerHTML =
-pedidos.join("<br>");
-
-document.getElementById("total").innerHTML =
-"Total: R$ "+total.toFixed(2);
+mostrar();
 
 }
 
 
-function finalizar(){
+function mostrar(){
 
-let texto =
-"Olá! Quero pedir:%0A"
-+ pedidos.join("%0A")
-+ "%0A%0ATotal: R$ "
-+ total.toFixed(2);
+document.getElementById("lista").innerHTML =
+itens.join("<br>");
+
+calcular();
+
+}
+
+
+
+function calcular(){
+
+let entrega =
+Number(document.getElementById("entrega").value);
+
+let final = total + entrega;
+
+
+document.getElementById("total").innerHTML =
+"Total: R$ " + final.toFixed(2);
+
+}
+
+
+
+function pedido(){
+
+let entrega =
+Number(document.getElementById("entrega").value);
+
+
+let valor =
+(total + entrega).toFixed(2);
+
+
+let mensagem =
+"Olá! Quero pedir:%0A%0A"
++ itens.join("%0A")
++ "%0A%0AEntrega: R$ "
++ entrega
++ "%0A"
++ "Total: R$ "
++ valor;
 
 
 window.open(
-"https://wa.me/048991943319?text="+texto
+"https://wa.me/048991943319?text="+mensagem
 );
+
 
 }
