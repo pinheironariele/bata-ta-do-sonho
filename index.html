@@ -1,21 +1,117 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
-<title>Batata do Sonho</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Batata do Sonho 🥔</title>
+
 <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
 
 <header>
+
 <h1>🥔 Batata do Sonho</h1>
-<p>Batatas recheadas feitas com amor</p>
+
+<p>Batatas recheadas feitas com amor 💛</p>
+
 </header>
 
 
-<section id="cardapio">
+<section>
 
-<h2>Cardápio</h2>
+<h2>Nosso Cardápio</h2>
+
 
 <div class="produto">
+
+<h3>🥓 Bacon & Cheddar</h3>
+
+<p>Bacon crocante, cheddar cremoso e muito sabor.</p>
+
+<strong>R$ 27,90</strong>
+
+<button onclick="adicionar('Bacon & Cheddar',27.90)">
+Adicionar
+</button>
+
+</div>
+
+
+
+<div class="produto">
+
+<h3>🍗 Frango Cremoso</h3>
+
+<p>Frango temperado, queijo e creme especial.</p>
+
+<strong>R$ 24,90</strong>
+
+<button onclick="adicionar('Frango Cremoso',24.90)">
+Adicionar
+</button>
+
+</div>
+
+
+
+<div class="produto">
+
+<h3>🌟 batata do Sonho Especial</h3>
+
+<p>A batata mais recheada da casa.</p>
+
+<strong>R$ 32,90</strong>
+
+<button onclick="adicionar('Especial',32.90)">
+Adicionar
+</button>
+
+</div>
+
+
+</section>
+
+
+<section class="carrinho">
+
+<h2>🛒 Seu Pedido</h2>
+
+<div id="lista"></div>
+
+<h3 id="total">Total: R$ 0,00</h3>
+
+
+<label>Taxa de entrega:</label>
+
+<select id="entrega" onchange="calcular()">
+
+<option value="5">Até 3 km - R$9</option>
+
+<option value="8">Até 6 km - R$12</option>
+
+<option value="12">Acima de 6 km - R$14</option>
+
+</select>
+
+
+<p>
+💳 Pix: 01372051040
+</p>
+
+
+<button class="finalizar" onclick="pedido()">
+Finalizar no WhatsApp
+</button>
+
+
+</section>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
