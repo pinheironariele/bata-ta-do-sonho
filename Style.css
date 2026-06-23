@@ -1,116 +1,66 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+body{
+
+font-family:Arial;
+margin:0;
+background:#fff6e8;
+
 }
 
-body {
-    background: #fff8ee;
-    color: #3a2415;
-    padding-bottom: 40px;
-}
 
-header {
-    background: #8b4513;
-    color: white;
-    text-align: center;
-    padding: 35px 20px;
-}
+header{
 
-header h1 {
-    font-size: 38px;
-    margin-bottom: 10px;
-}
+background:#8b4513;
+color:white;
+padding:30px;
+text-align:center;
 
-header p {
-    font-size: 18px;
 }
 
 
-#cardapio {
-    max-width: 900px;
-    margin: 30px auto;
-    padding: 20px;
-}
+section{
 
-h2 {
-    text-align: center;
-    margin: 25px 0;
-    color: #8b4513;
+padding:20px;
+
 }
 
 
-.produto {
-    background: white;
-    margin: 20px 0;
-    padding: 25px;
-    border-radius: 18px;
-    box-shadow: 0 5px 15px #0002;
+.produto{
+
+background:white;
+padding:20px;
+margin:15px 0;
+border-radius:15px;
+box-shadow:0 3px 10px #ccc;
+
 }
 
 
-.produto h3 {
-    font-size: 24px;
-    margin-bottom: 10px;
+button{
+
+background:#ff8c00;
+border:none;
+padding:12px;
+border-radius:10px;
+color:white;
+font-weight:bold;
+cursor:pointer;
+
+}
+
+
+.carrinho{
+
+background:white;
+margin:20px;
+border-radius:15px;
+
 }
 
 
-.produto p {
-    margin-bottom: 15px;
-    color: #555;
-}
+.finalizar{
 
-
-button {
-    background: #f4a300;
-    color: white;
-    border: none;
-    padding: 14px 25px;
-    border-radius: 25px;
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: bold;
-}
-
-
-button:hover {
-    background: #d88900;
-}
-
-
-#carrinho {
-    background: white;
-    max-width: 700px;
-    margin: auto;
-    padding: 20px;
-    border-radius: 15px;
-    min-height: 80px;
-}
-
-
-#total {
-    text-align: center;
-    margin: 20px;
-    font-size: 24px;
-}
-
-
-body > button {
-    display: block;
-    margin: 20px auto;
-    background: #25d366;
-}
-
-
-@media(max-width:600px){
-
-header h1 {
-    font-size: 30px;
-}
-
-.produto {
-    margin: 15px;
-}
+width:100%;
+font-size:18px;
 
 }
+        
