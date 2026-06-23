@@ -65,3 +65,4 @@ window.open(
 
 
 }
+const pix = "01372051040";
